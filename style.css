@@ -46,20 +46,22 @@ body{
 {
     margin: 2rem;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bolder;
 }
 .scrollables{
-    border: 1px solid black;
-    width: 60%;
-    height: 30rem;
+    /* overflow: hidden; */
+    width: 65%;
+    height: 40rem;
     margin: 0 auto;
     display: flex;
 }
 .collection{
-    border: 1px solid green;
     width: 35%;
     height: 30rem;
+}
+.collection:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 @media screen and (max-width: 1200px) {
     .scrollables{
@@ -72,4 +74,40 @@ body{
         width: 25rem;
         height: 30rem;
     }
+}
+.viewmore
+{
+    /* border: 1PX solid black; */
+    height: 3rem;
+    margin: 0.5rem;
+    color: rgb(155, 3, 3);
+    text-decoration: solid;
+}
+.butt{
+    border: 1px solid rgb(155, 3, 3);
+    width: fit-content;
+    padding: 0.5rem 4rem;
+    margin: 0 auto;
+}
+a:link {
+    text-decoration: none;
+  }
+.blocks
+{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 20rem;
+}
+.buttons1{
+    display: grid;
+  grid-template-columns: auto auto auto;
+  width: 50%;
+  margin: 0 auto;
+}
+.b{
+    border: 1px solid black;
+    width: 20rem;
+    height: 5rem;
+    margin: .5rem;
+    text-align: center;
 }
