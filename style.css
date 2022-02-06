@@ -100,15 +100,15 @@ a:link {
 }
 .buttons1{
     display: grid;
-  grid-template-columns: auto auto auto;
-  width: 50%;
-  margin: 0 auto;
+    grid-template-columns: auto auto auto;
+    width: 70%;
+    margin: 0 auto;
 }
 .b{
-    border: 1px solid black;
-    width: 20rem;
-    height: 5rem;
-    margin: .5rem;
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 5%;
+    margin: .2rem;
     text-align: center;
 }
 
@@ -121,7 +121,7 @@ a:link {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
     margin: auto;
 }
