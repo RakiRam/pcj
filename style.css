@@ -63,6 +63,18 @@ body{
 .collection:hover{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
+.scrollables1{
+    width: 80%;
+    height: 25rem;
+    margin: 0 auto;
+    display: flex;
+}
+
+.collection1{
+    width:39%;
+    height: 25rem;
+}
+
 @media screen and (max-width: 1200px) {
     .scrollables{
         width: 100%;
@@ -101,7 +113,8 @@ a:link {
 .buttons1{
     display: grid;
     grid-template-columns: auto auto auto;
-    width: 70%;
+    row-gap: 4px;
+    width: 80%;
     margin: 0 auto;
 }
 .b{
