@@ -1,289 +1,731 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <script src="./script.js"></script>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="https://www.pcjeweller.com/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="script" href="./script.js">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <title>Online Jewellery Shopping Store</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="./script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://www.pcjeweller.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="script" href="./script.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Online Jewellery Shopping Store</title>
+  </head>
 
-<body onload="currentSlide(1)"
-  style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-  <div class="slideshow-container">
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <a href="#">
-      <img src="https://cf-cdn.pcjeweller.com/public/uploads/banner/pcje-fast-shipping-web__275111410308244587.jpg"
-        style="width:100%">
-      </a>
-    </div>
+  <body
+    onload="currentSlide(1)"
+    style="
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    "
+  >
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <a href="#">
+          <img
+            src="https://cf-cdn.pcjeweller.com/public/uploads/banner/pcje-fast-shipping-web__275111410308244587.jpg"
+            style="width: 100%"
+          />
+        </a>
+      </div>
 
-    <div class="mySlides fade">
-      <a href="#">
-      <img src="https://cf-cdn.pcjeweller.com/public/uploads/banner/animal-collection-by-pcj__17897191574963663.jpg"
-        style="width:100%">
-      </a>
-    </div>
+      <div class="mySlides fade">
+        <a href="#">
+          <img
+            src="https://cf-cdn.pcjeweller.com/public/uploads/banner/animal-collection-by-pcj__17897191574963663.jpg"
+            style="width: 100%"
+          />
+        </a>
+      </div>
 
-    <div class="mySlides fade">
-      <a href="#">
-      <img src="https://cf-cdn.pcjeweller.com/public/uploads/banner/Mangalsutra-web__402646561419494182.jpg"
-        style="width:100%">
-      </a>
+      <div class="mySlides fade">
+        <a href="#">
+          <img
+            src="https://cf-cdn.pcjeweller.com/public/uploads/banner/Mangalsutra-web__402646561419494182.jpg"
+            style="width: 100%"
+          />
+        </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="#">
+          <img
+            src="https://cf-cdn.pcjeweller.com/public/uploads/banner/Blooming-Dale__700379800497506775.jpg"
+            style="width: 100%"
+          />
+        </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="#">
+          <img
+            src="https://cf-cdn.pcjeweller.com/public/uploads/banner/PCJ-Pik-see-collection__212789070182151648.jpg"
+            style="width: 100%"
+          />
+        </a>
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <div class="mySlides fade">
-      <a href="#">
-      <img src="https://cf-cdn.pcjeweller.com/public/uploads/banner/Blooming-Dale__700379800497506775.jpg"
-        style="width:100%">
-      </a>
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
     </div>
-    <div class="mySlides fade">
-      <a href="#">
-      <img src="https://cf-cdn.pcjeweller.com/public/uploads/banner/PCJ-Pik-see-collection__212789070182151648.jpg"
-        style="width:100%">
-      </a>
-    </div>
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-  </div>
-  <div class="greybox">
-    <div class="container1">
-      <div class="element">
-        <div class="logo">
-          <span style="font-size: 1.8rem; color: rgba(15, 15, 15, 0.61)">
-            <i class="fas fa-tags"></i>
-            <div class="maintext">BEST</div>
-            <div class="subtext">DESIGNS</div>
-          </span>
+    <div class="greybox">
+      <div class="container1">
+        <div class="element">
+          <div class="logo">
+            <span style="font-size: 1.8rem; color: rgba(15, 15, 15, 0.61)">
+              <i class="fas fa-tags"></i>
+              <div class="maintext">BEST</div>
+              <div class="subtext">DESIGNS</div>
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="element">
-        <div class="logo">
-          <span style="font-size: 1.8rem; color: rgba(15, 15, 15, 0.61)">
-            <i class="fas fa-award"></i>
-            <div class="maintext">CERTIFIED</div>
-            <div class="subtext">JEWELLERY</div>
-          </span>
+        <div class="element">
+          <div class="logo">
+            <span style="font-size: 1.8rem; color: rgba(15, 15, 15, 0.61)">
+              <i class="fas fa-award"></i>
+              <div class="maintext">CERTIFIED</div>
+              <div class="subtext">JEWELLERY</div>
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="element">
-        <div class="logo">
-          <span style="font-size: 1.8rem; color: rgba(15, 15, 15, 0.61)">
-            <i class="fas fa-box"></i>
-            <div class="maintext">EASY</div>
-            <div class="subtext">EXCHANGE</div>
-          </span>
+        <div class="element">
+          <div class="logo">
+            <span style="font-size: 1.8rem; color: rgba(15, 15, 15, 0.61)">
+              <i class="fas fa-box"></i>
+              <div class="maintext">EASY</div>
+              <div class="subtext">EXCHANGE</div>
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="element">
-        <div class="logo">
-          <span style="font-size: 1.8rem; color: rgba(15, 15, 15, 0.61)">
-            <i class="fas fa-shipping-fast"></i>
-            <div class="maintext">FREE</div>
-            <div class="subtext">INSURANCE</div>
-          </span>
+        <div class="element">
+          <div class="logo">
+            <span style="font-size: 1.8rem; color: rgba(15, 15, 15, 0.61)">
+              <i class="fas fa-shipping-fast"></i>
+              <div class="maintext">FREE</div>
+              <div class="subtext">INSURANCE</div>
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="element">
-        <div class="logo">
-          <span style="font-size: 1.8rem; color: rgba(15, 15, 15, 0.61)">
-            <i class="fas fa-random"></i>
-            <div class="maintext">LIFE TIME</div>
-            <div class="subtext">EXCHANGE</div>
-          </span>
+        <div class="element">
+          <div class="logo">
+            <span style="font-size: 1.8rem; color: rgba(15, 15, 15, 0.61)">
+              <i class="fas fa-random"></i>
+              <div class="maintext">LIFE TIME</div>
+              <div class="subtext">EXCHANGE</div>
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="element">
-        <div class="logo">
-          <span style="font-size: 1.8rem; color: rgba(15, 15, 15, 0.61)">
-            <i class="fas fa-hands"></i>
-            <div class="maintext">BIS</div>
-            <div class="subtext">HALLMARKED</div>
-          </span>
+        <div class="element">
+          <div class="logo">
+            <span style="font-size: 1.8rem; color: rgba(15, 15, 15, 0.61)">
+              <i class="fas fa-hands"></i>
+              <div class="maintext">BIS</div>
+              <div class="subtext">HALLMARKED</div>
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="element">
-        <div class="logo">
-          <span style="font-size: 1.8rem; color: rgba(15, 15, 15, 0.61)">
-            <i class="fas fa-tools"></i>
-            <div class="maintext">CUSTOMIZATION</div>
-            <div class="subtext">OPTIONS</div>
-          </span>
+        <div class="element">
+          <div class="logo">
+            <span style="font-size: 1.8rem; color: rgba(15, 15, 15, 0.61)">
+              <i class="fas fa-tools"></i>
+              <div class="maintext">CUSTOMIZATION</div>
+              <div class="subtext">OPTIONS</div>
+            </span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="shipping">
-    <div class="heading">READY TO SHIP</div>
-    <div class="scrollables">
-      <div class="collection">
-        <div class="header" style="background-color: rgb(248, 87, 59); font-size: 0.9rem; width: 40%; margin: 0.5rem;">
-        <a href="#" style="color: black;">
-          SHIPS FASTER
-        </a>
-        </div>
-        <a href="#">
-        <img style="height: 19rem;"
-          src="https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/custom/e/ER01110-1_442.jpg" alt="img" />
-        </a>
-        <a href="#">
-        <div class="text" style="text-align: center;">
-          <div class="maintext1" style="color: rgb(110, 110, 110); margin-bottom: 1.3rem;">The Dedrik Diamond Earrings</div>
-          <div class="cost" style="display: flex; text-align: center;">
-            <div style="margin-left: 30%; color: black; font-weight: bold; font-size: 1rem;">₹10,018</div>
-            <div style="margin-left: 5%;text-decoration: line-through;  color: gray;font-size: 0.9rem;">₹13,356</div>
+    <div class="shipping">
+      <div class="heading">READY TO SHIP</div>
+      <div class="scrollables">
+        <div class="collection">
+          <div
+            class="header"
+            style="
+              background-color: rgb(248, 87, 59);
+              font-size: 0.9rem;
+              width: 40%;
+              margin: 0.5rem;
+            "
+          >
+            <a href="#" style="color: black"> SHIPS FASTER </a>
           </div>
-          <div style="font-size: 0.8rem; word-spacing: 2px; margin: .3rem;">You Save</div>
-          <div style="display: flex; font-size: 0.9rem; margin: 0.5rem;">
-            <div style="margin-left: 37%;">₹3,338</div>
-            <div style="color: rgb(194, 3, 3); margin-left: 0.5rem;">[25% Off]</div>
-          </div>
-        </div>
-      </a>
-      </div>
-      <div class="collection">
-        <div class="header" style="background-color: rgb(248, 87, 59); font-size: 0.9rem; width: 40%; margin: 0.5rem;">
-          <a href="#" style="color: black;">
-          SHIPS FASTER
-          </a>
-        </div>
-        <a href="#">
-        <img style="height: 19rem;"
-          src="https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/custom/a/ABPT0001J-5_811.jpg" alt="img" />
-        </a>
-        <a href="#">
-        <div class="text" style="text-align: center;">
-          <div class="maintext1" style="color: rgb(110, 110, 110); margin-bottom: 1.3rem;">The Initial A Ganesha Diamond Pendant</div>
-          <div class="cost" style="display: flex; text-align: center;">
-            <div style="margin-left: 30%; color: black; font-weight: bold; font-size: 1rem;"> ₹6,402</div>
-            <div style="margin-left: 5%;text-decoration: line-through;  color: gray;font-size: 0.9rem;">$8,536</div>
-          </div>
-          <div style="font-size: 0.8rem; word-spacing: 2px; margin: .3rem;">You Save</div>
-          <div style="display: flex; font-size: 0.9rem; margin: 0.5rem;">
-            <div style="margin-left: 37%;">₹2,134</div>
-            <div style="color: rgb(194, 3, 3); margin-left: 0.5rem;">[25% Off]</div>
-          </div>
-        </div>
-      </a>
-      </div>
-      <div class="collection">
-        <div class="header" style="background-color: rgb(248, 87, 59); font-size: 0.9rem; width: 40%; margin: 0.5rem;">
-          <a href="#" style="color: black;">
-          SHIPS FASTER
-          </a>
-      </div>
-      <a href="#">
-        <img style="height: 19rem;"
-          src="https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/custom/p/PT00401A-5_738.jpg" alt="img" />
-        </a>
-        <a href="#">
-        <div class="text" style="text-align: center;">
-          <div class="maintext1" style="color: rgb(110, 110, 110); margin-bottom: 1.3rem;">The Alphabet A Diamond Pendant</div>
-          <div class="cost" style="display: flex; text-align: center;">
-            <div style="margin-left: 30%; color: black; font-weight: bold; font-size: 1rem;"> ₹6,553</div>
-            <div style="margin-left: 5%;text-decoration: line-through;  color: gray;font-size: 0.9rem;">₹8,736</div>
-          </div>
-          <div style="font-size: 0.8rem; word-spacing: 2px; margin: .3rem;">You Save</div>
-          <div style="display: flex; font-size: 0.9rem; margin: 0.5rem;">
-            <div style="margin-left: 37%;">₹2,183</div>
-            <div style="color: rgb(194, 3, 3); margin-left: 0.5rem;">[25% Off]</div>
-          </div>
-        </div>
-      </a>
-      </div>
-      <div class="collection">
-        <div class="header" style="background-color: rgb(248, 87, 59); font-size: 0.9rem; width: 40%; margin: 0.5rem;">
-        <a href="#" style="color: black;">
-          SHIPS FASTER
-        </a>
-        </div>
-        <a href="#">
-        <img style="height: 19rem;"
-          src="https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/custom/n/NP00031-1_319.jpg" alt="img"/>
-        </a>
-        <a href="#">
-        <div class="text" style="text-align: center;">
-          <div class="maintext1" style="color: rgb(110, 110, 110); margin-bottom: 1.3rem;">The Urshiya Diamond Nosepin</div>
-          <div class="cost" style="display: flex; text-align: center;">
-            <div style="margin-left: 30%; color: black; font-weight: bold; font-size: 1rem;">₹7,748</div>
-            <div style="margin-left: 5%;text-decoration: line-through;  color: gray;font-size: 0.9rem;">₹10,329</div>
-          </div>
-          <div style="font-size: 0.8rem; word-spacing: 2px; margin: .3rem;">You Save</div>
-          <div style="display: flex; font-size: 0.9rem; margin: 0.5rem;">
-            <div style="margin-left: 37%;">₹2,581</div>
-            <div style="color: rgb(194, 3, 3); margin-left: 0.5rem;">[25% Off]</div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="viewmore">
-    <a href="#">
-      <div class="butt">VIEW MORE</div>
-    </a>
-  </div>
-  <div class="div3">
-    <div class="heading">WHAT'S NEW</div>
-    <div class="blocks">
-      <div class="buttons1">
-        <div class="b">
           <a href="#">
-            <img alt class="giftcards" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/pcj-new/dg-gold.jpg" width="317">
+            <img
+              style="height: 19rem"
+              src="https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/custom/e/ER01110-1_442.jpg"
+              alt="img"
+            />
+          </a>
+          <a href="#">
+            <div class="text" style="text-align: center">
+              <div
+                class="maintext1"
+                style="color: rgb(110, 110, 110); margin-bottom: 1.3rem"
+              >
+                The Dedrik Diamond Earrings
+              </div>
+              <div class="cost" style="display: flex; text-align: center">
+                <div
+                  style="
+                    margin-left: 30%;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 1rem;
+                  "
+                >
+                  ₹10,018
+                </div>
+                <div
+                  style="
+                    margin-left: 5%;
+                    text-decoration: line-through;
+                    color: gray;
+                    font-size: 0.9rem;
+                  "
+                >
+                  ₹13,356
+                </div>
+              </div>
+              <div style="font-size: 0.8rem; word-spacing: 2px; margin: 0.3rem">
+                You Save
+              </div>
+              <div style="display: flex; font-size: 0.9rem; margin: 0.5rem">
+                <div style="margin-left: 37%">₹3,338</div>
+                <div style="color: rgb(194, 3, 3); margin-left: 0.5rem">
+                  [25% Off]
+                </div>
+              </div>
+            </div>
           </a>
         </div>
-        <div class="b">
+        <div class="collection">
+          <div
+            class="header"
+            style="
+              background-color: rgb(248, 87, 59);
+              font-size: 0.9rem;
+              width: 40%;
+              margin: 0.5rem;
+            "
+          >
+            <a href="#" style="color: black"> SHIPS FASTER </a>
+          </div>
           <a href="#">
-            <img alt class="giftcards" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/pcj-new/gift-cards.jpg" width="317">
+            <img
+              style="height: 19rem"
+              src="https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/custom/a/ABPT0001J-5_811.jpg"
+              alt="img"
+            />
+          </a>
+          <a href="#">
+            <div class="text" style="text-align: center">
+              <div
+                class="maintext1"
+                style="color: rgb(110, 110, 110); margin-bottom: 1.3rem"
+              >
+                The Initial A Ganesha Diamond Pendant
+              </div>
+              <div class="cost" style="display: flex; text-align: center">
+                <div
+                  style="
+                    margin-left: 30%;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 1rem;
+                  "
+                >
+                  ₹6,402
+                </div>
+                <div
+                  style="
+                    margin-left: 5%;
+                    text-decoration: line-through;
+                    color: gray;
+                    font-size: 0.9rem;
+                  "
+                >
+                  $8,536
+                </div>
+              </div>
+              <div style="font-size: 0.8rem; word-spacing: 2px; margin: 0.3rem">
+                You Save
+              </div>
+              <div style="display: flex; font-size: 0.9rem; margin: 0.5rem">
+                <div style="margin-left: 37%">₹2,134</div>
+                <div style="color: rgb(194, 3, 3); margin-left: 0.5rem">
+                  [25% Off]
+                </div>
+              </div>
+            </div>
           </a>
         </div>
-        <div class="b">
+        <div class="collection">
+          <div
+            class="header"
+            style="
+              background-color: rgb(248, 87, 59);
+              font-size: 0.9rem;
+              width: 40%;
+              margin: 0.5rem;
+            "
+          >
+            <a href="#" style="color: black"> SHIPS FASTER </a>
+          </div>
           <a href="#">
-            <img alt class="giftcards" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/pcj-new/new-this-month.jpg" width="317">
+            <img
+              style="height: 19rem"
+              src="https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/custom/p/PT00401A-5_738.jpg"
+              alt="img"
+            />
+          </a>
+          <a href="#">
+            <div class="text" style="text-align: center">
+              <div
+                class="maintext1"
+                style="color: rgb(110, 110, 110); margin-bottom: 1.3rem"
+              >
+                The Alphabet A Diamond Pendant
+              </div>
+              <div class="cost" style="display: flex; text-align: center">
+                <div
+                  style="
+                    margin-left: 30%;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 1rem;
+                  "
+                >
+                  ₹6,553
+                </div>
+                <div
+                  style="
+                    margin-left: 5%;
+                    text-decoration: line-through;
+                    color: gray;
+                    font-size: 0.9rem;
+                  "
+                >
+                  ₹8,736
+                </div>
+              </div>
+              <div style="font-size: 0.8rem; word-spacing: 2px; margin: 0.3rem">
+                You Save
+              </div>
+              <div style="display: flex; font-size: 0.9rem; margin: 0.5rem">
+                <div style="margin-left: 37%">₹2,183</div>
+                <div style="color: rgb(194, 3, 3); margin-left: 0.5rem">
+                  [25% Off]
+                </div>
+              </div>
+            </div>
           </a>
         </div>
-        <div class="b">
+        <div class="collection">
+          <div
+            class="header"
+            style="
+              background-color: rgb(248, 87, 59);
+              font-size: 0.9rem;
+              width: 40%;
+              margin: 0.5rem;
+            "
+          >
+            <a href="#" style="color: black"> SHIPS FASTER </a>
+          </div>
           <a href="#">
-            <img alt class="giftcards" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/pcj-new/best-sellers.jpg" width="317">
-          </a>         
-        </div>
-        <div class="b">
-          <a href="#">
-            <img alt class="giftcards" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/pcj-new/try-n-buy.jpg" width="317">
+            <img
+              style="height: 19rem"
+              src="https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/custom/n/NP00031-1_319.jpg"
+              alt="img"
+            />
           </a>
-        </div>
-        <div class="b">
           <a href="#">
-            <img alt class="giftcards" src="https://www.pcjeweller.com/public/uploads/exim/pcjw/pcj-new/pcj-collections.jpg" width="317">
+            <div class="text" style="text-align: center">
+              <div
+                class="maintext1"
+                style="color: rgb(110, 110, 110); margin-bottom: 1.3rem"
+              >
+                The Urshiya Diamond Nosepin
+              </div>
+              <div class="cost" style="display: flex; text-align: center">
+                <div
+                  style="
+                    margin-left: 30%;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 1rem;
+                  "
+                >
+                  ₹7,748
+                </div>
+                <div
+                  style="
+                    margin-left: 5%;
+                    text-decoration: line-through;
+                    color: gray;
+                    font-size: 0.9rem;
+                  "
+                >
+                  ₹10,329
+                </div>
+              </div>
+              <div style="font-size: 0.8rem; word-spacing: 2px; margin: 0.3rem">
+                You Save
+              </div>
+              <div style="display: flex; font-size: 0.9rem; margin: 0.5rem">
+                <div style="margin-left: 37%">₹2,581</div>
+                <div style="color: rgb(194, 3, 3); margin-left: 0.5rem">
+                  [25% Off]
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="shipping1">
-    <div class="scrollables1">
-      <div class="collection1">
+      <div class="viewmore">
         <a href="#">
-        <img style="height: 25rem;"
-          src="https://cf-cdn.pcjeweller.com/public/uploads/editor-images/best-sale/best-sellers.jpg" alt="img" />
+          <div class="butt">VIEW MORE</div>
         </a>
       </div>
+      <div class="div3">
+        <div class="heading">WHAT'S NEW</div>
+        <div class="blocks">
+          <div class="buttons1">
+            <div class="b">
+              <a href="#">
+                <img
+                  alt
+                  class="giftcards"
+                  src="https://www.pcjeweller.com/public/uploads/exim/pcjw/pcj-new/dg-gold.jpg"
+                  width="317"
+                />
+              </a>
+            </div>
+            <div class="b">
+              <a href="#">
+                <img
+                  alt
+                  class="giftcards"
+                  src="https://www.pcjeweller.com/public/uploads/exim/pcjw/pcj-new/gift-cards.jpg"
+                  width="317"
+                />
+              </a>
+            </div>
+            <div class="b">
+              <a href="#">
+                <img
+                  alt
+                  class="giftcards"
+                  src="https://www.pcjeweller.com/public/uploads/exim/pcjw/pcj-new/new-this-month.jpg"
+                  width="317"
+                />
+              </a>
+            </div>
+            <div class="b">
+              <a href="#">
+                <img
+                  alt
+                  class="giftcards"
+                  src="https://www.pcjeweller.com/public/uploads/exim/pcjw/pcj-new/best-sellers.jpg"
+                  width="317"
+                />
+              </a>
+            </div>
+            <div class="b">
+              <a href="#">
+                <img
+                  alt
+                  class="giftcards"
+                  src="https://www.pcjeweller.com/public/uploads/exim/pcjw/pcj-new/try-n-buy.jpg"
+                  width="317"
+                />
+              </a>
+            </div>
+            <div class="b">
+              <a href="#">
+                <img
+                  alt
+                  class="giftcards"
+                  src="https://www.pcjeweller.com/public/uploads/exim/pcjw/pcj-new/pcj-collections.jpg"
+                  width="317"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shipping1">
+        <div class="scrollables1">
+          <div class="collection1">
+            <a href="#">
+              <img
+                style="height: 25rem"
+                src="https://cf-cdn.pcjeweller.com/public/uploads/editor-images/best-sale/best-sellers.jpg"
+                alt="img"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="collection2">
+          <div
+            class="header"
+            style="
+              background-color: rgb(248, 87, 59);
+              font-size: 0.9rem;
+              width: 40%;
+              margin: 0.5rem;
+            "
+          >
+            
+          </div>
+          <a href="#">
+            <img
+              style="height: 10rem"
+              src="https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/custom/e/ER01110-1_442.jpg"
+              alt="img"
+            />
+          </a>
+          <a href="#">
+            <div class="text" style="text-align: center">
+              <div
+                class="maintext1"
+                style="color: rgb(110, 110, 110); margin-bottom: 1.3rem"
+              >
+                The Dedrik Diamond Earrings
+              </div>
+              <div class="cost" style="display: flex; text-align: center">
+                <div
+                  style="
+                    margin-left: 30%;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 1rem;
+                  "
+                >
+                  ₹10,018
+                </div>
+                <div
+                  style="
+                    margin-left: 5%;
+                    text-decoration: line-through;
+                    color: gray;
+                    font-size: 0.9rem;
+                  "
+                >
+                  ₹13,356
+                </div>
+              </div>
+              <div style="font-size: 0.8rem; word-spacing: 2px; margin: 0.3rem">
+                You Save
+              </div>
+              <div style="display: flex; font-size: 0.9rem; margin: 0.5rem">
+                <div style="margin-left: 37%">₹3,338</div>
+                <div style="color: rgb(194, 3, 3); margin-left: 0.5rem">
+                  [25% Off]
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="collection2">
+          <div
+            class="header"
+            style="
+              background-color: rgb(248, 87, 59);
+              font-size: 0.9rem;
+              width: 40%;
+              margin: 0.5rem;
+            "
+          >
+            
+          </div>
+          <a href="#">
+            <img
+              style="height: 10rem"
+              src="https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/custom/a/ABPT0001J-5_811.jpg"
+              alt="img"
+            />
+          </a>
+          <a href="#">
+            <div class="text" style="text-align: center">
+              <div
+                class="maintext1"
+                style="color: rgb(110, 110, 110); margin-bottom: 1.3rem"
+              >
+                The Initial A Ganesha Diamond Pendant
+              </div>
+              <div class="cost" style="display: flex; text-align: center">
+                <div
+                  style="
+                    margin-left: 30%;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 1rem;
+                  "
+                >
+                  ₹6,402
+                </div>
+                <div
+                  style="
+                    margin-left: 5%;
+                    text-decoration: line-through;
+                    color: gray;
+                    font-size: 0.9rem;
+                  "
+                >
+                  $8,536
+                </div>
+              </div>
+              <div style="font-size: 0.8rem; word-spacing: 2px; margin: 0.3rem">
+                You Save
+              </div>
+              <div style="display: flex; font-size: 0.9rem; margin: 0.5rem">
+                <div style="margin-left: 37%">₹2,134</div>
+                <div style="color: rgb(194, 3, 3); margin-left: 0.5rem">
+                  [25% Off]
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="collection2">
+          <div
+            class="header"
+            style="
+              background-color: rgb(248, 87, 59);
+              font-size: 0.9rem;
+              width: 40%;
+              margin: 0.5rem;
+            "
+          >
+            
+          </div>
+          <a href="#">
+            <img
+              style="height: 10rem"
+              src="https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/custom/p/PT00401A-5_738.jpg"
+              alt="img"
+            />
+          </a>
+          <a href="#">
+            <div class="text" style="text-align: center">
+              <div
+                class="maintext1"
+                style="color: rgb(110, 110, 110); margin-bottom: 1.3rem"
+              >
+                The Alphabet A Diamond Pendant
+              </div>
+              <div class="cost" style="display: flex; text-align: center">
+                <div
+                  style="
+                    margin-left: 30%;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 1rem;
+                  "
+                >
+                  ₹6,553
+                </div>
+                <div
+                  style="
+                    margin-left: 5%;
+                    text-decoration: line-through;
+                    color: gray;
+                    font-size: 0.9rem;
+                  "
+                >
+                  ₹8,736
+                </div>
+              </div>
+              <div style="font-size: 0.8rem; word-spacing: 2px; margin: 0.3rem">
+                You Save
+              </div>
+              <div style="display: flex; font-size: 0.9rem; margin: 0.5rem">
+                <div style="margin-left: 37%">₹2,183</div>
+                <div style="color: rgb(194, 3, 3); margin-left: 0.5rem">
+                  [25% Off]
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="collection2">
+          <div
+            class="header"
+            style="
+              background-color: rgb(248, 87, 59);
+              font-size: 0.9rem;
+              width: 40%;
+              margin: 0.5rem;
+            "
+          >
+            
+          </div>
+          <a href="#">
+            <img
+              style="height: 10rem"
+              src="https://cf-cdn.pcjeweller.com/public/uploads/catalog/product/custom/n/NP00031-1_319.jpg"
+              alt="img"
+            />
+          </a>
+          <a href="#">
+            <div class="text" style="text-align: center">
+              <div
+                class="maintext1"
+                style="color: rgb(110, 110, 110); margin-bottom: 1.3rem"
+              >
+                The Urshiya Diamond Nosepin
+              </div>
+              <div class="cost" style="display: flex; text-align: center">
+                <div
+                  style="
+                    margin-left: 30%;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 1rem;
+                  "
+                >
+                  ₹7,748
+                </div>
+                <div
+                  style="
+                    margin-left: 5%;
+                    text-decoration: line-through;
+                    color: gray;
+                    font-size: 0.9rem;
+                  "
+                >
+                  ₹10,329
+                </div>
+              </div>
+              <div style="font-size: 0.8rem; word-spacing: 2px; margin: 0.3rem">
+                You Save
+              </div>
+              <div style="display: flex; font-size: 0.9rem; margin: 0.5rem">
+                <div style="margin-left: 37%">₹2,581</div>
+                <div style="color: rgb(194, 3, 3); margin-left: 0.5rem">
+                  [25% Off]
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-  
-</body>
-
+  </body>
 </html>

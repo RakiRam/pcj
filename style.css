@@ -60,6 +60,7 @@ body{
     width: 40%;
     height: 30rem;
 }
+
 .collection:hover{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -106,8 +107,9 @@ a:link {
   }
 .blocks
 {
+    margin-left: 12%;
     /* border: 1px solid black; */
-    width: 100%;
+    width: 80%;
     height: 20rem;
 }
 .buttons1{
@@ -215,4 +217,21 @@ a:link {
     to {
         opacity: 1
     }
+}
+.shipping1{
+    margin-left: 17%;
+    margin-right: 24rem;
+    /* border: 1px solid black; */
+    display: flex;
+    height: 25rem;
+}
+.collection2{
+    width: 100%;
+    height: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.collection2:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
